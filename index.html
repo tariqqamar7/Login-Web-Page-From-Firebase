@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bus Invenio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+
+		<div class="loginbox">
+			<img src="buslogo.png" class="logo">
+			<h2>Login here</h2>
+			<form  id="nextdiv">
+				<input type="email" placeholder="Enter your Id" id="email_field" ><br/>
+				<input type="password" placeholder="Enter your Password" id="password_field" ><br/>
+				<button onclick="login()">Login btn</button>
+			</form>	
+		</div>
+	</header>
+
+			
+		<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyCOdW--Zw2EwkD2za0N0yR25cX0XZLO-oQ",
+		    authDomain: "for-web-232407.firebaseapp.com",
+		    databaseURL: "https://for-web-232407.firebaseio.com",
+		    projectId: "for-web-232407",
+		    storageBucket: "for-web-232407.appspot.com",
+		    messagingSenderId: "97654840423"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="userauth.js"></script>
+	</body>
+</html>
